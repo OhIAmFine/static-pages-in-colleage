@@ -1,0 +1,69 @@
+css border实现
+一个div或者元素的border并不是我们直观意义上的一条有高度的线，而是一个等高梯形或者三角形（宽高为0时），可以看一下效果：
+div定义：
+<div class="arrow1"></div>
+css:
+
+.arrow1{
+  width: 0px;
+  height:0px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #007998 #47A447 #3C6AB9 #D2322D;
+}
+最终效果：
+
+可以看到每一个方向的border都是一个三角形，那么我们只需把对应方向剩余其他方向的border设置为透明或者隐藏掉就可以得到任何方向的一个三角形了。如果我们想得到一个下拉图标，我们可以将border的左右和下边框改为透明，css改动如下：
+.arrow1{
+  width: 0px;
+  height:0px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #007998 transparent transparent transparent;
+}
+再看一下效果：
+
+注：transparent 属性用来在 background 中将 background-color 选项设置为背景颜色透明
+bingo!就是我们想要的效果，但是在ie6下杯具鸟！
+
+长长的大黑框，让人无法直视，这是因为ie6不支持transparent 透明属性，这时候我们可以将对应区域的border的样式设置为dashed，dashed在边框宽度很大时，会隐藏掉。css修改如下：
+.arrow1{
+  width: 0px;
+  height:0px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #007998 transparent transparent transparent;
+}
+效果如下（ie6下查看）：
+
+但是，到此仍没有结束，我们设置个阴影来查看下最终生成的效果：
+
+即便是我们看到的已经生成一个我们需要的三角形，但是三角形的占用高度仍是原高度，这会导致在和其他元素使用时，造成上移的效果。此时，我们需要把下边框的高度设置为0：
+?
+1
+
+.arrow1{
+  width: 0px;
+  height:0px;
+  border-width: 30px 30px 0;
+  border-style: solid;
+  border-color: #007998 transparent transparent transparent;
+}
+再来看看效果：
+
+似乎仍是不太友好，在使用时我们仍需要修改对应的颜色，能不能根据父元素设定的颜色，显示对应的颜色呢？我们需要把border-color修改下：
+?
+1
+
+.arrow1{
+  width: 0px;
+  height:0px;
+  line-height: 0px;
+  border-width: 30px 30px 0;
+  border-style: solid dashed dashed dashed;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+效果（使用当前字体颜色）：
+
+当然除了利用css border生成外，我们还可以使用特殊字符◇叠加定位来生成，也可以使用css3的旋转来生成（ie6下需要hack处理）。利用border是一种常用而且简单兼容的方式

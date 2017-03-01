@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<title>静态网页</title>
+		<link  rel="stylesheet" type="text/css" href="qietu.css" title="qietu">
+	</head>
+	<body>
+<div class="head">
+<div class="front">
+	<div class="shoucang"><img src="test.gif"/>加入收藏</div>
+	<div class="dianhua"><img src="dianhua.gif"/>400-000-0000</div>
+</div>
+<div class="second">
+<div class="yourlogo">your&nbsp;<span>logo<span></div>
+<div class="six">
+	<table >
+		<tr>
+		<td>首页</td>
+		<td class="guanyu">关于我们</td>
+		<td>新闻中心</td>
+		<td>服务项目</td>
+		<td>案例展示</td>
+		<td>联系我们</td>
+	</tr>
+	</table>
+
+</div>
+</div>
+</div>
+<div class="middle"><img src="jingqu.gif"/></div>
+<div class="sheji">
+<div class="citydesign">
+	<img src="chengshi.gif"/>
+	<div class="side">
+		<div class="top"><img src="fangkuai.gif"/>&nbsp;城市设计</div>
+		<div class="med">厦门市顶级设计师为 元素注入了活力...</div>
+	    <div class="bot"> more>></div>
+	</div>
+</div>
+<div class="program">
+	<img src="luyou.gif"/>
+	<div class="side">
+		<div class="top"><img src="fangkuai.gif"/>&nbsp;旅游管理</div>
+		<div class="med">厦门市顶级设计师为 元素注入了活力...</div>
+	    <div class="bot"> more>></div>
+	</div>
+</div>
+<div class="offical">
+	<img src="guanli.gif"/>
+	<div class="side">
+		<div class="top"><img src="fangkuai.gif"/>&nbsp;运营管理</div>
+		<div class="med">厦门市顶级设计师为 元素注入了活力...</div>
+	    <div class="bot"> more>></div>
+	</div>
+</div>
+</div>
+<div class="anli">
+<div class="case"><img src="bofang.gif"/><div>成功案例&nbsp;case</div>
+</div>
+<div class="about"><img src="guanyu.gif"/><div>关于我们&nbsp;about</div>
+</div>
+<div class="contact"><img src="lianxi.gif"/><div>联系我们&nbsp;contact
+</div>
+</div>
+</div>
+<div class="jieshao">
+<div class="lunbo">
+	   <div class="huan">
+<img id="obj" src =""/></div>
+	<div class="change">
+		<div class="guide">
+			&nbsp;城市景观</div>
+		<div class="a">3</div>
+		<div class="b">2</div>
+		<div class="c">1</div>
+	</div>
+</div>
+<div class="words">
+	   <div class="say"> 公司成立8年来，规模持续扩大，形成了以技术为导向的均衡发展，永续创新、卓越品质、合作双赢、回报社会的经营理念，凭借执着的追求和不懈的努力，目前已发展成为国外最为专业、产品覆盖面最广、用户数量最多、最具竞争力的城市设计规划解决方案供应商。</div>
+	<div class="see">查看更多<div><img src="xiangzuo.gif"/></div></div>
+</div>
+<div class="aderss">
+	<h1>地址：厦门市软件园二期观日路26号</h1>
+	<h2> 邮编：361006</h2>
+	<h3>邮箱：123456789@163.com</h3>
+	<h4>网址：www.baidu.com</h4>
+	<div class="tel">
+		<img src="tel.gif">
+		<div>电话：<span>400-000-0000</span></div>
+	</div>
+		<div class="saw">查看更多<div><img src="xiangzuo.gif"/></div>
+	</div>
+</div>
+</div>
+<div class="bottom">
+	<h1>
+关于我们 | 新闻中心 | 服务项目 | 成功案例 | 联系我们 | 招聘信息 | 客户留言</h1>
+	<h2>Copyright © 2005-2013 ALL Right Reserved </h2>
+</div>
+	</body>
+	<script language =javascript > 
+var curIndex=0;  
+var timeInterval=1000; 
+var arr1=new Array(); 
+arr1[0]="lunbo.gif"; 
+arr1[1]="chengshi.gif"; 
+arr1[2]="luyou.gif";  
+arr1[3]="guanli.gif";  
+setInterval(changeImg,timeInterval); 
+function changeImg() 
+{ 
+    var obj=document.getElementById("obj"); 
+    if (curIndex==arr1.length-1)  
+    { 
+        curIndex=0; 
+    } 
+    else 
+    { 
+        curIndex+=1; 
+    } 
+    obj.src=arr1[curIndex]; 
+} 
+</script> 
+ 
+</html>

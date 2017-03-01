@@ -1,0 +1,326 @@
+body{
+	width: 100%;
+	height:100%;
+	margin: 0;
+	background-color: RGB(247,247,247);
+}
+.head{
+	height: 6em;
+	width: 100%;
+}
+.front{
+	width: 100%;
+	height:2em;
+	font-size: 0.8em;
+	
+}
+.shoucang{
+	float:right;
+	right: 22%;
+	position: relative;
+	top:1em;
+}
+.dianhua{
+	float: right;
+	right:8%;
+	top:1em;
+	position: relative;
+
+}
+.second{
+	width: 100%;
+	height:4em;
+}
+.yourlogo{
+	font-size: 2.5em;
+	float: left;
+	position: absolute;
+	left: 20%;
+	text-transform: uppercase;
+	color: #114d7d;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+.yourlogo span{
+color: #60b303;
+}
+.six{
+	float: right;
+	position: absolute;
+	color: #114d7d;
+left:47%;
+font-size: 1em;
+font-weight: 700;
+
+}
+td{
+	padding: 2em;
+	padding: 1em;
+}
+.guanyu{
+	background-color: #114d7d;
+	color: white;
+padding-bottom: 1.7em;
+}
+.middle{
+	width: 100%;
+	height: 17em;
+}
+.middle img{
+	width: 100%;
+	height: 17em;
+}
+.sheji{
+	width: 100%;
+	height:6em;
+	position: relative;
+	top:-4em;
+}
+.citydesign,.program,.offical{
+	width:14em;
+	height: 100%;
+	position: relative;
+	left:19%;
+	float:left;
+	padding:1em;
+	border-style: solid;
+	border-width: thin;
+	background-color: rgba(210,215,220, 1);
+}
+.program{
+	left:28%;
+}
+.offical{
+	left:37%;
+}
+.citydesign img[src*="chengshi"]{
+	width: 6em;
+	height: 6em;
+	float: left;
+}
+.program img[src*="luyou"]{
+	width: 6em;
+	height: 6em;
+	float: left;
+}
+.offical img[src*="guanli"]{
+	width: 6em;
+	height: 6em;
+	float: left;
+}
+.side{
+	width: 7.5em;
+	height: 6em;
+	float: right;
+}
+.top{
+	color: #164a6d;
+	margin: 0.4em;
+	font-weight: bold;
+}
+.med{
+	margin: 0.4em;
+	font-size: 0.5em;
+}
+.bot{
+	width: 3em;
+	height: 1em;
+	margin: 0.4em;
+	background-color:#164e7a;
+	float: right;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f7f7f7;
+}
+.anli{
+		width: 100%;
+	height:4.3em;
+	position: relative;
+	top:-2em;
+	float: left;
+}
+.case,.about,.contact{
+	width:16em;
+	height: 100%;
+	position:relative;
+	left:19%;
+	float:left;	 
+	border-style: solid;
+	border-width: thin;
+	border-color: RGB(207,207,207);
+}
+.about{
+	left:28%;
+}
+.contact{
+	left:37%;
+}
+.case img,.about img ,.contact img{
+	width: 25%;
+	height: 100%;
+
+}
+.case div ,.about div ,.contact div{
+		text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1em;
+	color: #adadad;
+	background-color: rgba(248,248,248, 0.1);
+	text-align: center;
+line-height: 4.3em;
+	float: right;
+	width: 75%;
+	height: 100%;
+
+}
+.jieshao{
+    width: 100%;
+	height:12em;
+	position: relative;
+	top:0em;
+	float: left;
+}
+.lunbo,.words,.aderss{
+	width:16em;
+	height: 100%;
+	position:relative;
+	left:19%;
+	float:left;
+	background-colorred;	 
+}
+.words{
+	left:28%;
+}
+.aderss{
+	left:37%;
+}
+.lunbo{
+	background-image:url(lunbo.gif);
+	background-repeat:no-repeat;
+}
+#obj{
+	width: 16em;
+	height: 100%;
+}
+.huan{
+	width: 16em;
+	height: 87%;
+}
+.change{
+	width: 100%;
+	height: 13%;
+	position: relative;
+	background-color: rgba(78,60,38,0.6);
+	color: white;
+}
+.guide{
+	width: 6em;
+	height: 100%;
+	float: left;
+}
+.a,.b,.c{
+	width: 1.5em;
+	height: 68%;
+	position: relative;
+	float: right;
+	text-align: center;
+	padding:0.25em;
+}
+.b{
+	background-color: RGB(44,110,172);
+}
+.say{
+	font-size: 0.7em;
+    text-indent: 1em;
+    line-height: 2em;
+    color: RGB(119,119,119);
+}
+.see{
+	width: 70%;
+	height: 20%;
+	text-align: center;
+	line-height: 2.5em;
+	background-color: RGB(242,242,242);
+	color: RGB(119,119,119);
+	border-style: solid;
+	border-width: thin;
+	top: 15%;
+	border-color: white;
+	position: relative;
+}
+.see div,.see img{
+	width: 3em;
+	height: 100%;
+    border-width: 1;
+	float: right;
+    border-left-style: solid;
+	border-width: thin;
+	border-color: RGB(223,223,223);
+}
+.aderss h1,.aderss h2,.aderss h3,.aderss h4{
+	font-size: 0.5em;
+	text-align: left;
+	font-weight: normal;
+	color: RGB(119,119,119);
+}
+.tel{
+	width: 100%;
+	height: 2.5em;
+    border-style: solid;
+	border-width: thin;
+	background-color: white;
+	border-color: RGB(207,207,207);
+}
+.tel div{
+	height: 100%;
+	width: 80%;
+	float: right;
+		line-height: 2.5em;
+	
+}
+.tel img{
+width: 2.5em;
+height: 100%;
+}
+.tel span{
+	color: RGB(96,179,3);
+	font-weight: bold;
+	font-family: Helvetica;
+	font-size: 1.5em;
+}
+.saw{
+	width: 70%;
+	height: 20%;
+	text-align: center;
+	line-height: 2.5em;
+	background-color: RGB(242,242,242);
+	color: RGB(119,119,119);
+	border-style: solid;
+	border-width: thin;
+	float: left;
+	top: 6%;
+	border-color: RGB(223,223,223);
+	position: relative;
+}
+.saw div,.saw img{
+	width: 3em;
+	height: 100%;
+    border-width: 1;
+	float: right;
+    border-left-style: solid;
+	border-width: thin;
+	border-color: white;
+}
+.bottom{
+width: 100%;
+height: 3em;
+position: relative;
+top: 3em;
+float: left;
+}
+.bottom h1, .bottom h2{
+	font-size: 0.5em;
+	text-align: center;
+	font-weight: normal;
+	color: RGB(119,119,119);
+}
